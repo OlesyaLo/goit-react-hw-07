@@ -1,0 +1,50 @@
+.containerContact {
+  border: 2px solid #707070;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  min-width: 300px;
+  gap: 12px;
+  position: relative;
+}
+
+.deleteBtn {
+  padding: 5px;
+  width: 60px;
+  height: 30px;
+  display: block;
+  align-items: center;
+  align-items: flex-end;
+  position: absolute;
+  top: 50%;
+  transform: translate(400%, -50%);
+  background-color: #ff0081;
+  color: #fff;
+ transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 15px rgba(255, 0, 130, 0.5);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.deleteBtn:hover {
+  background-color: #ca0065;
+}
+
+.deleteBtn:active{
+  transform: translate(400%, -50%);
+  background-color: darken(#ff0081, 20%);
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+
+.text {
+  text-align: left;
+  display: flex;
+  /* width: 235px; */
+  gap: 5px;
+  margin: 0;
+}
+
