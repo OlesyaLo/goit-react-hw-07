@@ -2,17 +2,20 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  margin-top: 0px;
 }
 
 .label {
   font-weight: bold;
   margin-bottom: 3px;
+  margin-top: 0px;
+  font-size: 18px;
 }
 
-input {
+.searchInput {
   padding: 8px;
   border: 1px solid #707070;
-  max-width: 300px;
+  width: 304px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

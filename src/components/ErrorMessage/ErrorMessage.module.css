@@ -1,5 +1,6 @@
 .error {
   text-align: center;
+  font-weight: bold;
   font-size: 20px;
-  color: red;
+  color: #ca0065;
 }

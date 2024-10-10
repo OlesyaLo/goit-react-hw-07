@@ -6,7 +6,7 @@ import css from './SearchBox.module.css';
 
 export default function SearchBox() {
   const dispatch = useDispatch();
-  const filter = useSelector(selectNameFilter);
+  const inputValue = useSelector(selectNameFilter);
   const handleChange = (event) => {
     dispatch(changeFilter(event.target.value));
   };
@@ -15,8 +15,9 @@ export default function SearchBox() {
     <div className={css.filterContainer}>
       <p className={css.label}>Find contacts by name</p>
       <input
+      className={css.searchInput}
         type="text"
-        value={filter}
+        value={inputValue || ''}
         onChange={handleChange}
         placeholder="Search for..."
       />

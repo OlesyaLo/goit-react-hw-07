@@ -34,17 +34,25 @@
   background-color: #ca0065;
 }
 
+.deleteBtn:focus {
+  outline: 0;
+}
+
 .deleteBtn:active{
-  transform: translate(400%, -50%);
+  /* transform: translate(400%, -50%); */
+  transition: transform scale(0.9);
   background-color: darken(#ff0081, 20%);
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
 }
 
 .text {
   text-align: left;
+  font-size: 14px;
+  font-weight: bold;
   display: flex;
   /* width: 235px; */
   gap: 5px;
   margin: 0;
+  color: #213547;
 }
 
