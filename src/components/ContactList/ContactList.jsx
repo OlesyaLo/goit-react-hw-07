@@ -32,7 +32,7 @@ export default function ContactList() {
             <Contact key={contact.id} {...contact} />
           </li>
         ))
-        : !isLoading && !isError && <p>This contact is not found</p>}
+        : !isLoading && !isError && <p className={css.error}>This contact is not found</p>}
     </ul>
     {/* {isLoading && <Loader />}
     {isError && <ErrorMessage />} */}
